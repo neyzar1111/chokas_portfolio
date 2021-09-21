@@ -21,7 +21,7 @@ function Header() {
                     </Link>
 
                     <Link to="/Contacts">
-                        <li>Contact's</li>
+                        <li>Contacts</li>
                     </Link>
 
                 </ul>
