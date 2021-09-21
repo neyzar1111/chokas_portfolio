@@ -9,19 +9,28 @@ import {
 function Footer() {
     return (
         <footer>
-            <div className="footerCol1">
-                <Link to="/">
-                    <li>About me</li>
-                </Link>
+            <div className="footerContentWrap">
+               <h1>
+                   Keep In Touch.
+               </h1>
+                <p>
+                    I'm currently open to work as a Front-end Developer.
+                    Let's get in touch and talk more about your projects.
+                </p>
+                <div className='footer-icon_Container'>
+                    <a href=""><img className= "footer-icon" src="https://img.icons8.com/material-sharp/38/000000/mail.png"/></a>
 
-                <Link to="/My_projects">
-                    <li>My projects</li>
-                </Link>
+                    <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">
+                        <img className= "footer-icon" src="https://img.icons8.com/windows/38/000000/linkedin-2.png"/>
 
-                <Link to="/Contacts">
-                    <li>Contact's</li>
-                </Link>
+                    </a>
+                    <a href="https://github.com/neyzar1111">
+                        <img className= "footer-icon" src="https://img.icons8.com/ios-filled/38/000000/github.png"/>
+
+                    </a>
+                </div>
             </div>
+
         </footer>
     );
 }
