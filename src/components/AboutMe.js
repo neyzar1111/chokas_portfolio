@@ -17,30 +17,44 @@ function AboutMe() {
                 </div>
 
             </div>
-            <section className="skills">
-                <div className="rows animate__animated animate__fadeInUp">
-                    <h3>Design</h3>
-                    <div className="icon-wrap">
-                        <img  className="" src="https://img.icons8.com/ios/30/ffffff/sass-avatar.png"/>
-                        <img  className="" src="https://img.icons8.com/windows/30/ffffff/bootstrap.png"/>
-                        <img  className="" src="https://img.icons8.com/ios/30/ffffff/html.png"/>
+            <section className="skills_section">
+                <h2>My Tech Stack</h2>
+                <div className="skills">
+                    <div className="rows animate__animated animate__fadeInUp">
+                        <h3>Design</h3>
+                        <div className="icon-wrap">
+                            <img  className="icon-skills" src="/assets/sass.svg"/>
+                            {/*https://img.icons8.com/ios/30/ffffff/sass-avatar.png*/}
+                            <img  className="icon-skills" src="/assets/bootstrap.svg"/>
+                            {/*https://img.icons8.com/windows/30/ffffff/bootstrap.png*/}
+                            <img  className="icon-skills" src="/assets/html-5.svg"/>
+                        {/*    https://img.icons8.com/ios/30/ffffff/html.png*/}
+                        </div>
                     </div>
-                </div>
-                <div className="rows animate__animated animate__fadeInUp">
-                    <h3>Code</h3>
-                    <div className="icon-wrap">
-                        <img  className="" src="https://img.icons8.com/ios-filled/30/ffffff/php.png"/>
-                        <img  className="" src="https://img.icons8.com/ios-filled/30/ffffff/js.png"/>
-                        <img className="" src="https://img.icons8.com/ios/30/ffffff/laravel.png"/>
-                        <img className="" src="https://img.icons8.com/dotty/30/ffffff/react.png"/>
+                    <div className="rows animate__animated animate__fadeInUp">
+                        <h3>Code</h3>
+                        <div className="icon-wrap">
+                            <img  className="icon-skills" src="/assets/php.svg"/>
+                            {/*https://img.icons8.com/ios-filled/30/ffffff/php.png*/}
+                            <img  className="icon-skills" src="/assets/javascript.svg"/>
+                            {/*https://img.icons8.com/ios-filled/30/ffffff/js.png*/}
+                            <img className="icon-skills" src="https://img.icons8.com/ios/30/ffffff/laravel.png"/>
+                            <img className="icon-skills" src="/assets/react.png"/>
+                            <img className="icon-skills" src="/assets/typescript.svg"/>
+                        {/*    https://img.icons8.com/dotty/30/ffffff/react.png*/}
+                        </div>
                     </div>
-                </div>
-                <div className="rows">
-                    <h3>Tools</h3>
-                    <div className="icon-wrap animate__animated animate__fadeInUp">
-                        <img className="" src="https://img.icons8.com/ios-filled/30/ffffff/git.png"/>
-                        <img className="" src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png"/>
-                        <img className="" src="https://img.icons8.com/windows/30/ffffff/nodejs.png"/>
+                    <div className="rows">
+                        <h3>Tools</h3>
+                        <div className="icon-wrap animate__animated animate__fadeInUp">
+                            <img className="icon-skills" src="/assets/git.svg"/>
+                            {/*https://img.icons8.com/ios-filled/30/ffffff/git.png*/}
+                            <img className="icon-skills github-icon" src="/assets/github.svg"/>
+                            {/*https://img.icons8.com/ios-glyphs/30/ffffff/github.png*/}
+                            <img className="icon-skills" src="/assets/nodejs.svg"/>
+                            <img className="icon-skills" src="/assets/bash.svg"/>
+                        {/*    https://img.icons8.com/windows/30/ffffff/nodejs.png*/}
+                        </div>
                     </div>
                 </div>
             </section>
