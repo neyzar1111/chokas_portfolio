@@ -130,11 +130,11 @@ blockquote{
 }
 footer{
 
-  min-height: 200px;
+  min-height: 250px;
   background-color: #e9ff70;
   color: #333533;
   border-radius:  0 60% 0 100%;
-
+  margin-top: 1px;
 }
 .footerContentWrap{
   padding-top: 20px;
@@ -203,8 +203,12 @@ footer{
   .skills{
     flex-direction: column;
   }
-
-
+  .imgWrap{
+    min-height: 280px;
+  }
+  footer{
+    min-height: 300px;
+  }
 }
 @media only screen and (max-width: 300px){
 

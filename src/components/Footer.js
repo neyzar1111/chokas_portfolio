@@ -17,8 +17,8 @@ function Footer() {
                     I'm currently open to work as a Front-end Developer.
                     Let's get in touch and talk more about your projects.
                 </p>
-                <div className='footer-icon_Container'>
-                    <a href=""><img className= "footer-icon" src="https://img.icons8.com/material-sharp/38/000000/mail.png"/></a>
+                <div className='footer-icon_Container' >
+                    <a href="mailto:choka95@hotmail.com" target="_blank" ><img className= "footer-icon" src="https://img.icons8.com/material-sharp/38/000000/mail.png"/></a>
 
                     <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">
                         <img className= "footer-icon" src="https://img.icons8.com/windows/38/000000/linkedin-2.png"/>
