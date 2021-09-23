@@ -29,7 +29,7 @@ function My_projects() {
                             <img src="https://img.icons8.com/fluency-systems-filled/25/1f4957/circled-dot.png"/>
                             <p>Typescript</p>
                             <a href="https://github.com/neyzar1111/the-impossible-quiz">
-                                <img className= "footer-icon" src="https://img.icons8.com/ios-filled/30/000000/github.png"/>
+                                <img className= " icon-skills footer-icon" src="/assets/github.svg"/>
                             </a>
 
                         </div>
@@ -53,7 +53,7 @@ function My_projects() {
                             <img src="https://img.icons8.com/fluency-systems-filled/25/efe943/circled-dot.png"/>
                             <p>JavaScript</p>
                             <a href="https://github.com/neyzar1111/js-21-card-game">
-                                <img className= "footer-icon" src="https://img.icons8.com/ios-filled/30/000000/github.png"/>
+                                <img className= " icon-skills footer-icon" src="/assets/github.svg"/>
                             </a>
 
                         </div>
@@ -77,7 +77,7 @@ function My_projects() {
                             <img src="https://img.icons8.com/fluency-systems-filled/25/efe943/circled-dot.png"/>
                             <p>JavaScript</p>
                             <a href="https://github.com/neyzar1111/rock-paper-scissors">
-                                <img className= "footer-icon" src="https://img.icons8.com/ios-filled/30/000000/github.png"/>
+                                <img className= " icon-skills footer-icon" src="/assets/github.svg"/>
                             </a>
 
                         </div>
@@ -101,7 +101,7 @@ function My_projects() {
                             <img src="https://img.icons8.com/fluency-systems-filled/25/efe943/circled-dot.png"/>
                             <p>JavaScript</p>
                             <a href="https://github.com/neyzar1111/weather-app">
-                                <img className= "footer-icon" src="https://img.icons8.com/ios-filled/30/000000/github.png"/>
+                                <img className= "footer-icon icon-skills" src="/assets/github.svg"/>
                             </a>
 
                         </div>

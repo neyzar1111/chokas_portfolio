@@ -11,24 +11,30 @@ function Header() {
     const ulRev = useRef(null);
     const liRev = useRef(null);
     const closeRev = useRef(null);
-    function toggleMenu (){
+    const mailRef = useRef(null);
+    function openMenu (){
         navRev.current.classList.add("mobile_nav");
         ulRev.current.classList.add("mobile_ul");
         ulRev.current.classList.add("mobile_li");
         closeRev.current.classList.add("close_button");
+        mailRef.current.classList.add("mailFilterInvert");
+
     }
     function closeFunction(){
         navRev.current.classList.remove("mobile_nav");
         ulRev.current.classList.remove("mobile_ul");
         ulRev.current.classList.remove("mobile_li");
         closeRev.current.classList.remove("close_button");
+        mailRef.current.classList.remove("mailFilterInvert");
     }
     return (
         <header className="header">
             <h1>Aichurok Enazarova</h1>
-            <img className="menu_button"  onClick={toggleMenu} src="https://img.icons8.com/ios-filled/30/000000/menu--v1.png"/>
+            <img  className="menu_button burger-icon"  onClick={openMenu} src="/assets/menu-of-three-lines.svg"/>
             <nav ref={navRev} className="desk_nav">
-                <img ref={closeRev}   onClick={closeFunction} className=" close"  src="https://img.icons8.com/ios-filled/30/ffffff/close-window.png"/>
+               <div className="closeBtnWrap">
+                   <img ref={closeRev}   onClick={closeFunction} className="close close_icon"  src="/assets/close.svg"/>
+               </div>
                 <ul ref={ulRev} className="">
                     <Link to="/">
                         <li ref={liRev} className="">About me</li>
@@ -39,8 +45,12 @@ function Header() {
                     </Link>
 
                     <Link ref={liRev} to="/Contacts">
-                        <li className="">Contacts</li>
+                        <li className="">Contacts </li>
+
                     </Link>
+                    <a ref={mailRef} href="mailto:choka95@hotmail.com" target="_blank" >
+                        <img className= " footer-icon icon-skills icon-envelope_header" src="/assets/email2.svg"/>
+                    </a>
 
                 </ul>
             </nav>

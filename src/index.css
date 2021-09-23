@@ -26,9 +26,26 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 0.7em;
+  font-size: 0.8em;
 
 }
+.icon-envelope_header{
+  position: absolute;
+  right: 25px;
+  top: 18px;
+  width: 25px;
+}
+.mailFilterInvert{
+  filter: invert();
+  position: absolute;
+  right: 5%;
+  bottom: 50%;
+}
+.burger-icon{
+  width: 30px;
+  height: 20px;
+}
+
 .menu_button{
   display: none;
 }
@@ -44,6 +61,7 @@ nav ul {
   list-style-type: none;
 
 }
+
 .mobile_nav{
   position: absolute;
   top: 0;
@@ -55,6 +73,7 @@ nav ul {
   z-index: 999999;
   padding:4em 1em 1em 1em ;
   display: block;
+  transition: all 0.4s ease;
 }
 .mobile_ul{
   display: flex;
@@ -81,8 +100,19 @@ ul li:hover{
   display: block;
   position: absolute;
   top: 1em;
-  right: 1em;
+  left: 1em;
 }
+.close_button:hover{
+  display: block;
+  transition: all 0.4s ease;
+  transform: scale(1.1);
+
+}
+.close_icon{
+  filter: invert();
+  width: 18px;
+}
+
 /*about me*/
 #about_me{
   text-align: center;
@@ -140,6 +170,7 @@ ul li:hover{
 }
 .github-icon{
   filter: invert();
+  /*filter: brightness(0.5);*/
 }
 .rows{
   margin: 1em;
@@ -249,7 +280,15 @@ footer{
 .icon-github-wrap p {
   margin: 5px;
 }
+@media only screen and (max-width: 550px) {
 
+  .menu_button{
+    display: block;
+  }
+  nav{
+    display: none;
+  }
+}
 @media only screen and (max-width: 450px) {
   .skills{
     flex-direction: column;
@@ -260,13 +299,10 @@ footer{
   footer{
     min-height: 300px;
   }
-  nav{
-    display: none;
-  }
-  .menu_button{
-    display: block;
-  }
+
 }
+
+
 @media only screen and (max-width: 300px){
 
   .project-tile{
@@ -275,7 +311,6 @@ footer{
 
   }
   .decor1{
-
     width:255px;
     height: 8.1em;
   }
@@ -293,7 +328,5 @@ footer{
 
   }
 }
-@media only screen and (min-width: 450px){
 
 
-}

@@ -18,14 +18,16 @@ function Footer() {
                     Let's get in touch and talk more about your projects.
                 </p>
                 <div className='footer-icon_Container' >
-                    <a href="mailto:choka95@hotmail.com" target="_blank" ><img className= "footer-icon" src="https://img.icons8.com/material-sharp/38/000000/mail.png"/></a>
+                    <a href="mailto:choka95@hotmail.com" target="_blank" >
+                        <img className= "footer-icon icon-skills" src="/assets/email2.svg"/>
+                    </a>
 
                     <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">
-                        <img className= "footer-icon" src="https://img.icons8.com/windows/38/000000/linkedin-2.png"/>
+                        <img className= "footer-icon icon-skills" src="/assets/linkedin2.svg"/>
 
                     </a>
                     <a href="https://github.com/neyzar1111">
-                        <img className= "footer-icon" src="https://img.icons8.com/ios-filled/38/000000/github.png"/>
+                        <img className= "footer-icon icon-skills" src="/assets/github.svg"/>
 
                     </a>
                 </div>
