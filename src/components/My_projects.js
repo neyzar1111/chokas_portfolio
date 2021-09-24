@@ -15,7 +15,6 @@ function My_projects() {
             {/******1*********/}
             <div className="my_projects">
                 <div className="project1-wrap">
-                    <span className="decor1"></span>
 
                     <div className="project-tile">
 
@@ -39,7 +38,6 @@ function My_projects() {
             {/***********2***********/}
             <div className="my_projects">
                 <div className="project1-wrap">
-                    <span className="decor1"></span>
 
                     <div className="project-tile">
 
@@ -63,8 +61,6 @@ function My_projects() {
             {/********3*******/}
             <div className="my_projects">
                 <div className="project1-wrap">
-                    <span className="decor1"></span>
-
                     <div className="project-tile">
 
                         <div>
@@ -87,7 +83,6 @@ function My_projects() {
             {/******4*******/}
             <div className="my_projects">
                 <div className="project1-wrap">
-                    <span className="decor1"></span>
 
                     <div className="project-tile">
 
