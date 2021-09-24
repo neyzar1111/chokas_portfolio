@@ -104,8 +104,9 @@ ul li:hover{
 }
 .close_button:hover{
   display: block;
-  transition: all 0.4s ease;
+  /*transition: all 0.4s ease;*/
   transform: scale(1.1);
+
 
 }
 .close_icon{
@@ -167,6 +168,7 @@ ul li:hover{
 }
 .icon-skills:hover{
   transform: scale(1.1);
+  transition: transform .1s ease-in-out;
 }
 .github-icon{
   filter: invert();
@@ -250,27 +252,21 @@ footer{
   position: relative;
 }
 .project-tile{
-  width:300px;
-  max-width:300px;
+  width:20em;
   position:relative;
-  background-color:#e9ff70;
+  background-color:white;
   border-radius:5px;
-  border:1px solid #7e816b;
+  border:1px solid #e9ff70;
   color: black;
   padding: 10px;
+  box-shadow: 3px 3px 0 #e9ff70;
 }
-.decor1{
-  position:absolute;
-  bottom: -4px;
-  background-color:#7e816b;
-  width:305px;
-  height: 7.1em;
-  z-index:-500;
-  border-radius:10px 5px;
-  box-sizing:initial;
-}
+
 .project-tile:hover{
-  transform: translate(-1px, -2px );
+  transform: translate(-1px, -1px );
+  border-radius:6px;
+  box-shadow: 6px 6px 0  #e9ff70 , 3px 3px 0  #e9ff70 ;
+  transition: box-shadow .3s ease-in-out;
 }
 .icon-github-wrap{
   display: flex;
@@ -310,10 +306,7 @@ footer{
     height: 8em;
 
   }
-  .decor1{
-    width:255px;
-    height: 8.1em;
-  }
+
 }
 
 @media only screen and (max-width: 255px){
@@ -322,11 +315,40 @@ footer{
     max-width:200px;
     height: 10em;
   }
-  .decor1{
-    height: 10.1em;
-    width:205px;
 
-  }
 }
 
-
+/*********CONTACTS***********/
+.form_wrapper{
+  border: 3px solid #e9ff70;
+  border-radius: 5px 5px 5px 20px;
+  max-width:30em ;
+  margin:2em  auto 5em auto ;
+  background-color: white;
+  color: black;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.form_wrapper h3{
+  margin: 5px auto 1em auto;
+}
+.form_contact input, .form_contact button , textarea {
+  width: 100%;
+  padding:.3rem;
+  border: 1px solid #d4d4d4;
+}
+.form_contact input:focus, textarea:focus {
+  outline: #e9ff70 2px solid ;
+}
+.form_contact button{
+  background-color: #d4d4d4;
+  color: black;
+}
+.form_contact button:hover{
+  background-color: #e9ff70;
+  color: black;
+  transition: background-color 2s ease-out;
+}
