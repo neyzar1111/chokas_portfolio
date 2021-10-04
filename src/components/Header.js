@@ -29,7 +29,7 @@ function Header() {
     }
     return (
         <header className="header">
-            <h1>Aichurok Enazarova</h1>
+            <h1 className="logo">AE</h1>
             <img  className="menu_button burger-icon"  onClick={openMenu} src="/assets/menu-of-three-lines.svg"/>
             <nav ref={navRev} className="desk_nav">
                <div className="closeBtnWrap">
@@ -48,9 +48,7 @@ function Header() {
                         <li className="">Contacts </li>
 
                     </Link>
-                    <a ref={mailRef} href="mailto:choka95@hotmail.com" target="_blank" >
-                        <img className= " footer-icon icon-skills icon-envelope_header" src="/assets/email2.svg"/>
-                    </a>
+
 
                 </ul>
             </nav>
