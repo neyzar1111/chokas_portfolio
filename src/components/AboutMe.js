@@ -7,16 +7,23 @@ function AboutMe() {
 
     return (
         <div id="about_me">
-            <div className="aboutmeContentWrap">
-                <div className= "imgWrap"> <div className="chokaImg"></div></div>
-                <div className="text-intro">
-                   <h2> Hello, my name is Aichurok and I am a junior web developer!</h2>
+                <div className="main-intro">
+                    <h1>Hi, My name is</h1>
+                    <h2 className="big-heading">Aichurok Enazarova.</h2>
+                    <h3 className="big-heading bh-second">I build things for the web.</h3>
                     <p>
                         I am passionate about building scalable software, creating effective solutions, and learning every day to grow professionally in the IT field.
                     </p>
+                    <a href="mailto:choka95@hotmail.com" target="_blank" >
+                        <button className="intro-button">
+                            send me email
+                            <img className= "mailMe_icon" src="/assets/email2.svg"/>
+                        </button>
+
+                    </a>
+
                 </div>
 
-            </div>
             <section className="skills_section">
                 <h2>My Tech Stack</h2>
                 <div className="skills">
@@ -48,16 +55,18 @@ function AboutMe() {
                         </div>
                     </div>
                 </div>
-            </section>
-            <section className="quoteSection">
-                <div className="blockquoteWrap">
-                    <blockquote>
-                        <q>All our dreams can come true, if we have the courage to pursue them. </q>
-                        <cite> – Walt Disney</cite>
-                    </blockquote>
-                </div>
+
 
             </section>
+            {/*<section className="quoteSection">*/}
+            {/*    <div className="blockquoteWrap">*/}
+            {/*        <blockquote>*/}
+            {/*            <q>All our dreams can come true, if we have the courage to pursue them. </q>*/}
+            {/*            <cite> – Walt Disney</cite>*/}
+            {/*        </blockquote>*/}
+            {/*    </div>*/}
+
+            {/*</section>*/}
         </div>
     );
 }
