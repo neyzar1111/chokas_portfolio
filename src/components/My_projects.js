@@ -28,7 +28,7 @@ function My_projects() {
                             <img src="https://img.icons8.com/fluency-systems-filled/25/1f4957/circled-dot.png"/>
                             <p>Typescript</p>
                             <a href="https://github.com/neyzar1111/the-impossible-quiz">
-                                <img className= " icon-skills footer-icon" src="/assets/github.svg"/>
+                                <img className= "icon-skills footer-icon" src="/assets/github.svg"/>
                             </a>
 
                         </div>

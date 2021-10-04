@@ -2,14 +2,19 @@
   margin: 0 ;
   padding:0;
   box-sizing: border-box;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Inter', sans-serif;
 
 }
 body{
-  background-color: #333533;
+  background-color: #23272d;
   color: #f2f5fa!important;
   width: 100%;
-  /*height: 300vh;*/
+
+
+}
+.icon{
+  width: 30px;
+  margin: 4px;
 
 }
 h1::selection,h2::selection, h3::selection,
@@ -20,15 +25,20 @@ li::selection{
   color: white;
 }
 header {
-  background: #e9ff70;
-  color: black;
-  height: 60px;
+  position: fixed;
+  color: white;
+  height: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 0.8em;
-
+  width: 100%;
+  margin-bottom: 60px;
+  background-color: #23272d;
+  box-shadow: rgba(119, 119, 165, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  z-index: 6;
 }
+
 .icon-envelope_header{
   position: absolute;
   right: 25px;
@@ -126,45 +136,97 @@ ul li:hover{
   color: white;
 
 }
-.text-intro h2 , p{
-  margin-bottom: 0.5em;
-}
 
 
 
-
-.imgWrap{
-  min-width: 100%;
-  min-height: 200px;
-  background-color: #e9ff70;
-  border-radius: 0 0 2% 50%;
-}
-
-.text-intro{
-  width: 95%;
-  position: absolute;
-  color: black;
-  font-weight: bold;
-}
-.text-intro p{
-  width: 50%;
+.main-intro{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0px;
+  width: 80%;
   margin: 0 auto;
-  font-weight: normal;
-
+  text-align: left;
 }
-.skills_section h2{
-  padding-bottom:1px;
-  margin: 1em;
+.main-intro h1 {
+  margin: 0px 0px 30px 4px;
+  color: #e9ff70;
+  font-size: clamp(14px,5vw,16px);
+  font-weight: 400;
 }
-.skills{
+.main-intro h2 {
+  font-weight: 600;
+  /*color: white;*/
+  line-height: 1.1;
+}
+.main-intro .big-heading  {
+  margin: 0px;
+  font-size: clamp(40px, 8vw, 80px);
+}
+.main-intro p{
+  margin: 20px 0px 0px;
+  max-width: 540px;
+  text-align: justify;
+}
+.main-intro  .bh-second{
+  color: rgba(233, 255, 112, 0.8);
+  font-size: clamp(30px, 7vw, 70px);
+}
+.intro-button{
+  padding: 10px;
+  border: #e9ff70 1px solid;
+  margin-top: 1em;
+  text-transform: capitalize ;
+  border-radius: 5px;
+  background-color: inherit;
+  color: white;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.mailMe_icon{
+  width: 30px;
+  margin-left: 4px;
+  color: #23272d;
+}
+.icon-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  border-radius: 5px;
+  background-color: #333533;
+  width: 80px;
+  height: 80px;
+}
+.skills_section{
+  height: 90vh;
+  background-color: #e9ff70;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills_section h2{
+  margin-left: 10%;
+}
+.icon-skills_wrap{
+  display: flex;
+  max-width: 600px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1em auto;
+  padding: 1em;
 
 }
 .icon-skills{
-  width: 30px;
-  margin:2px
+  width: 50px;
+  margin:2px;
 }
 .icon-skills:hover{
   transform: scale(1.1);
@@ -172,7 +234,6 @@ ul li:hover{
 }
 .github-icon{
   filter: invert();
-  /*filter: brightness(0.5);*/
 }
 .rows{
   margin: 1em;
@@ -189,37 +250,34 @@ ul li:hover{
   color: #e9ff70;
 
 }
-.quoteSection{
-  height: 100px;
+footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  border: #e9ff70 solid 5px;
-  border-radius: 5px 60%  0 20%;
+  border-top: #e9ff70 solid 5px;
+  color: white;
+  border-radius: 5px 20%  0 0;
   border-bottom: none;
-  border-right: 3px solid #e9ff70;
   margin-bottom: 0;
+  margin-top: 1.4em;
+  padding-bottom: 6em;
 }
-.blockquoteWrap{
-  width: 60%;
+.footer-icon_Container{
+  display: flex;
+  flex-direction: row;
 }
-blockquote{
-  text-align: center;
-
+.footer-icon_Container img{
+  filter: invert();
+}
+.footer-icon_Container button {
+  margin: 5px;
 }
 @media only screen and (max-width: 450px) {
   .skills{
     flex-direction: column;
   }
 }
-footer{
 
-  min-height: 250px;
-  background-color: #e9ff70;
-  color: #333533;
-  border-radius:  0 60% 0 100%;
-  margin-top: 1px;
-}
 .footerContentWrap{
   padding-top: 20px;
   min-height: 100px;
@@ -235,11 +293,12 @@ footer{
   margin: 4px;
 }
 .footerContentWrap h1{
-  margin-bottom:5px ;
+  margin:8px 1.6em;
 }
 #projects{
   display: flex;
   flex-direction: column;
+  padding: 60px;
 }
 
 .my_projects{
@@ -319,6 +378,9 @@ footer{
 }
 
 /*********CONTACTS***********/
+#contacts{
+  padding-top: 60px;
+}
 .form_wrapper{
   border: 3px solid #e9ff70;
   border-radius: 5px 5px 5px 20px;
