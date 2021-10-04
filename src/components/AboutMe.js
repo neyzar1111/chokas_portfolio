@@ -26,36 +26,52 @@ function AboutMe() {
 
             <section className="skills_section">
                 <h2>My Tech Stack</h2>
-                <div className="skills">
-                    <div className="rows animate__animated animate__fadeInUp">
-                        <h3>Design</h3>
-                        <div className="icon-wrap">
-                            <img  className="icon-skills" src="/assets/sass.svg"/>
-                            <img  className="icon-skills" src="/assets/bootstrap.svg"/>
-                            <img  className="icon-skills" src="/assets/html-5.svg"/>
-                        </div>
-                    </div>
-                    <div className="rows animate__animated animate__fadeInUp">
-                        <h3>Code</h3>
-                        <div className="icon-wrap">
-                            <img  className="icon-skills" src="/assets/php.svg"/>
-                            <img  className="icon-skills" src="/assets/javascript.svg"/>
-                            <img className="icon-skills" src="https://img.icons8.com/ios/30/ffffff/laravel.png"/>
-                            <img className="icon-skills" src="/assets/react.png"/>
-                            <img className="icon-skills" src="/assets/typescript.svg"/>
-                        </div>
-                    </div>
-                    <div className="rows">
-                        <h3>Tools</h3>
-                        <div className="icon-wrap animate__animated animate__fadeInUp">
-                            <img className="icon-skills" src="/assets/git.svg"/>
-                            <img className="icon-skills github-icon" src="/assets/github.svg"/>
-                            <img className="icon-skills" src="/assets/nodejs.svg"/>
-                            <img className="icon-skills" src="/assets/bash.svg"/>
-                        </div>
-                    </div>
-                </div>
 
+                <div className="icon-skills_wrap code_skills">
+                    <div className="icon-wrap">
+                        <img  className="icon-skills" src="/assets/javascript.svg"/>
+                    </div>
+
+                    <div className="icon-wrap">
+                        <img className="icon-skills" src="https://img.icons8.com/ios/30/ffffff/laravel.png"/>
+                    </div>
+
+                    <div className="icon-wrap">
+                        <img className="icon-skills" src="/assets/react.png"/>
+                    </div>
+
+                    <div className="icon-wrap">
+                        <img  className="icon-skills" src="/assets/php.svg"/>
+
+                    </div>
+                    <div className= "icon-wrap">
+                        <img className="icon-skills" src="/assets/typescript.svg"/>
+                    </div>
+
+                    <div className="icon-wrap">
+                        <img  className="icon-skills" src="/assets/html-5.svg"/>
+                    </div>
+                    <div className="icon-wrap">
+                        <img  className="icon-skills" src="/assets/bootstrap.svg"/>
+                    </div>
+                    <div className="icon-wrap">
+                        <img  className="icon-skills" src="/assets/sass.svg"/>
+                    </div>
+
+                    <div className="icon-wrap">
+                        <img className="icon-skills" src="/assets/git.svg"/>
+                    </div>
+                    <div className="icon-wrap">
+                        <img className="icon-skills github-icon" src="/assets/github.svg"/>
+                    </div>
+                    <div className="icon-wrap">
+                        <img className="icon-skills" src="/assets/nodejs.svg"/>
+                    </div>
+                    <div className="icon-wrap">
+                        <img className="icon-skills" src="/assets/bash.svg"/>
+                    </div>
+
+                </div>
 
             </section>
             {/*<section className="quoteSection">*/}
