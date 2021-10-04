@@ -11,13 +11,11 @@ function Header() {
     const ulRev = useRef(null);
     const liRev = useRef(null);
     const closeRev = useRef(null);
-    const mailRef = useRef(null);
     function openMenu (){
         navRev.current.classList.add("mobile_nav");
         ulRev.current.classList.add("mobile_ul");
         ulRev.current.classList.add("mobile_li");
         closeRev.current.classList.add("close_button");
-        mailRef.current.classList.add("mailFilterInvert");
 
     }
     function closeFunction(){
@@ -25,7 +23,6 @@ function Header() {
         ulRev.current.classList.remove("mobile_ul");
         ulRev.current.classList.remove("mobile_li");
         closeRev.current.classList.remove("close_button");
-        mailRef.current.classList.remove("mailFilterInvert");
     }
     return (
         <header className="header">
