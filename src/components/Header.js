@@ -6,46 +6,35 @@ import {
     Link
 } from "react-router-dom";
 
-function Header() {
-    const navRev = useRef(null);
-    const ulRev = useRef(null);
-    const liRev = useRef(null);
-    const closeRev = useRef(null);
-    function openMenu (){
-        navRev.current.classList.add("mobile_nav");
-        ulRev.current.classList.add("mobile_ul");
-        ulRev.current.classList.add("mobile_li");
-        closeRev.current.classList.add("close_button");
 
-    }
-    function closeFunction(){
-        navRev.current.classList.remove("mobile_nav");
-        ulRev.current.classList.remove("mobile_ul");
-        ulRev.current.classList.remove("mobile_li");
-        closeRev.current.classList.remove("close_button");
-    }
+function Header() {
+
+    const [navMenu, setNavMenu] = useState(false);
+
+
     return (
         <header className="header">
             <h1 className="logo">AE</h1>
-            <img  className="menu_button burger-icon"  onClick={openMenu} src="/assets/menu-of-three-lines.svg"/>
-            <nav ref={navRev} className="desk_nav">
+            <img  className="menu_button burger-icon"  onClick={()=>setNavMenu(true)} src="/assets/menu-of-three-lines.svg"/>
+
+            <nav className={`${navMenu ? 'mobile_nav' : ""}`} >
+
                <div className="closeBtnWrap">
-                   <img ref={closeRev}   onClick={closeFunction} className="close close_icon"  src="/assets/close.svg"/>
+                   <img   onClick={()=>setNavMenu(false)}   className={` close close_icon ${navMenu ? 'close_button' : ""}`}   src="/assets/close.svg"/>
                </div>
-                <ul ref={ulRev} className="">
+
+                <ul className={`${navMenu ? 'mobile_ul' : ""}`}>
                     <Link to="/">
-                        <li ref={liRev} className="">About me</li>
+                        <li  onClick={()=>setNavMenu(false)}  className={`${navMenu ? 'mobile_li' : ""}`} > About me</li>
                     </Link>
 
-                    <Link ref={liRev} to="/My_projects">
-                        <li className="">My projects</li>
+                    <Link to="/My_projects">
+                        <li  onClick={()=>setNavMenu(false)}  className={`${navMenu ? 'mobile_li' : ""}`} >My projects</li>
                     </Link>
 
-                    <Link ref={liRev} to="/Contacts">
-                        <li className="">Contacts </li>
-
+                    <Link to="/Contacts">
+                        <li    onClick={()=>setNavMenu(false)}  className={`${navMenu ? 'mobile_li' : ""}`} >Contacts </li>
                     </Link>
-
 
                 </ul>
             </nav>
