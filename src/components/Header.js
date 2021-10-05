@@ -14,7 +14,7 @@ function Header() {
 
     return (
         <header className="header">
-            <h1 className="logo">AE</h1>
+            <h1 className="logo"><span className="headerDecorSpan">&#123;</span>AE<span className="headerDecorSpan">&#125;</span></h1>
             <img  className="menu_button burger-icon"  onClick={()=>setNavMenu(true)} src="/assets/menu-of-three-lines.svg"/>
 
             <nav className={`${navMenu ? 'mobile_nav' : ""}`} >
