@@ -1,9 +1,7 @@
 import React, {useState, useEffect, useRef} from "react";
 
 function AboutMe() {
-    const useDiv = useRef();
-    const useDiv2 = useRef();
-    const [scroll, setScroll] = useState(0);
+
 
     return (
         <div id="about_me">
@@ -17,7 +15,7 @@ function AboutMe() {
                     <a href="mailto:choka95@hotmail.com" target="_blank" >
                         <button className="intro-button">
                             send me email
-                            <img className= "mailMe_icon" src="/assets/email2.svg"/>
+                            <img className= "mailMe_icon" src="/assets/send_blue.png"/>
                         </button>
 
                     </a>
@@ -74,15 +72,7 @@ function AboutMe() {
                 </div>
 
             </section>
-            {/*<section className="quoteSection">*/}
-            {/*    <div className="blockquoteWrap">*/}
-            {/*        <blockquote>*/}
-            {/*            <q>All our dreams can come true, if we have the courage to pursue them. </q>*/}
-            {/*            <cite> – Walt Disney</cite>*/}
-            {/*        </blockquote>*/}
-            {/*    </div>*/}
 
-            {/*</section>*/}
         </div>
     );
 }
