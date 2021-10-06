@@ -31,7 +31,7 @@ function AboutMe() {
                     </div>
 
                     <div className="icon-wrap">
-                        <img className="icon-skills" src="https://img.icons8.com/ios/30/ffffff/laravel.png"/>
+                        <img className="icon-skills" src="/assets/laravel.png"/>
                     </div>
 
                     <div className="icon-wrap">
