@@ -25,7 +25,7 @@ function My_projects() {
                                     <img src="https://img.icons8.com/fluency-systems-filled/25/1f4957/circled-dot.png"/>
                                     <p>Typescript</p>
                                     <a href="https://github.com/neyzar1111/the-impossible-quiz">
-                                        <img className= "icon githubIconProject" src="/assets/github.svg"/>
+                                        <img className= "icon githubIconProject" src="/assets/003-github.png"/>
                                     </a>
                                 </div>
 
@@ -52,7 +52,7 @@ function My_projects() {
                                 <img src="https://img.icons8.com/fluency-systems-filled/25/efe943/circled-dot.png"/>
                                 <p>JavaScript</p>
                                 <a href="https://github.com/neyzar1111/js-21-card-game">
-                                    <img className= "icon githubIconProject" src="/assets/github.svg"/>
+                                    <img className= "icon githubIconProject" src="/assets/003-github.png"/>
                                 </a>
                             </div>
 
@@ -79,7 +79,7 @@ function My_projects() {
                                     <img src="https://img.icons8.com/fluency-systems-filled/25/efe943/circled-dot.png"/>
                                     <p>JavaScript</p>
                                     <a target='_blank' href="https://github.com/neyzar1111/rock-paper-scissors">
-                                        <img className= "icon githubIconProject" src="/assets/github.svg"/>
+                                        <img className= "icon githubIconProject" src="/assets/003-github.png"/>
                                     </a>
                                 </div>
 
@@ -108,7 +108,7 @@ function My_projects() {
                                     <img src="https://img.icons8.com/fluency-systems-filled/25/efe943/circled-dot.png"/>
                                     <p>JavaScript</p>
                                     <a href="https://github.com/neyzar1111/weather-app">
-                                        <img className= "icon githubIconProject" src="/assets/github.svg"/>
+                                        <img className= "icon githubIconProject" src="/assets/003-github.png"/>
                                     </a>
                                 </div>
 
