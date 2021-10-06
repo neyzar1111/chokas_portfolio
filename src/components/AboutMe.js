@@ -13,7 +13,7 @@ function AboutMe() {
                         I am passionate about building scalable software, creating effective solutions, and learning every day to grow professionally in the IT field.
                     </p>
                     <a href="mailto:choka95@hotmail.com" target="_blank" >
-                        <button className="intro-button">
+                        <button className="introBtn intro-button">
                             send me email
                             <img className= "mailMe_icon" src="/assets/send_blue.png"/>
                         </button>

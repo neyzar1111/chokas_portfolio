@@ -193,6 +193,9 @@ a{
   font-size: clamp(30px, 7vw, 70px);
   margin-top: 12px
 }
+.main-intro .intro-button{
+  margin-top: 3em;
+}
 .intro-button{
   padding: 10px;
   border:none;
@@ -205,6 +208,7 @@ a{
   justify-content: space-between;
   align-items: center;
 }
+
 
 .project-button{
   padding: 10px;
@@ -420,6 +424,7 @@ button:hover{
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  font-size: 14px;
 }
 .iconCopyright{
   width: 20px;
