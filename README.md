@@ -1,3 +1,3 @@
 # Hello!
 
-here is deployed my portfolio: [https://enazarovaaichurok.netlify.app/](https://enazarovaaichurok.netlify.app/)
+here is deployed my portfolio: [https://aichurok-enazarova.netlify.app/](https://aichurok-enazarova.netlify.app/)
