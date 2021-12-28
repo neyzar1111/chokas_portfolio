@@ -1,40 +1,34 @@
-import React ,{ useState, useRef }from "react";
+import React ,{ useState }from "react";
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
+    NavLink
 } from "react-router-dom";
 
-
 function Header() {
-
     const [navMenu, setNavMenu] = useState(false);
-
 
     return (
         <header className="header">
             <h1 className="logo"><span className="headerDecorSpan">&#123;</span>AE<span className="headerDecorSpan">&#125;</span></h1>
-            <img  className="menu_button burger-icon"  onClick={()=>setNavMenu(true)} src="/assets/menu-of-three-lines.svg"/>
+            <img  className="menu_button burger-icon"  onClick={()=>setNavMenu(true)} src="/assets/menu-of-three-lines.svg" alt="menu-button"/>
 
             <nav className={`${navMenu ? 'mobile_nav' : ""}`} >
 
                <div className="closeBtnWrap">
-                   <img   onClick={()=>setNavMenu(false)}   className={` close close_icon ${navMenu ? 'close_button' : ""}`}   src="/assets/close.svg"/>
+                   <img   onClick={()=>setNavMenu(false)}   className={` close close_icon ${navMenu ? 'close_button' : ""}`}   src="/assets/close.svg" alt="close button"/>
                </div>
 
                 <ul className={`${navMenu ? 'mobile_ul' : ""}`}>
-                    <Link to="/">
-                        <li  onClick={()=>setNavMenu(false)}  className={`${navMenu ? 'mobile_li' : ""}`} > About me</li>
-                    </Link>
+                    <NavLink  exact to="/" activeClassName="activeNav">
+                        <li  onClick={()=>{  setNavMenu(false);}}  className={`navLink ${navMenu ? 'mobile_li' : ""}`} > About me</li>
+                    </NavLink>
 
-                    <Link to="/My_projects">
-                        <li  onClick={()=>setNavMenu(false)}  className={`${navMenu ? 'mobile_li' : ""}`} >My projects</li>
-                    </Link>
+                    <NavLink  exact  to="/My_projects" activeClassName="activeNav" >
+                        <li  onClick={()=>{  setNavMenu(false); }}  className={`navLink ${navMenu ? 'mobile_li' : ""}`} >My projects</li>
+                    </NavLink>
 
-                    <Link to="/Contacts">
-                        <li    onClick={()=>setNavMenu(false)}  className={`${navMenu ? 'mobile_li' : ""}`} >Contacts </li>
-                    </Link>
+                    <NavLink exact  to="/Contacts" activeClassName="activeNav">
+                        <li    onClick={()=>{  setNavMenu(false);}}  className={`navLink ${ navMenu ? 'mobile_li' : ""}`} > Contacts </li>
+                    </NavLink>
 
                 </ul>
             </nav>

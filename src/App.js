@@ -1,9 +1,7 @@
 import './App.css';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Contacts from "./components/Contacts";
 import AboutMe from "./components/AboutMe";

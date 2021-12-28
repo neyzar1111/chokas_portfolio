@@ -73,15 +73,18 @@ nav ul {
 }
 nav ul li{
   margin: 3px;
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-ul li:hover{
+ul li:hover {
   color: #516d95;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+.activeNav{
+  color: #516d95;
+}
+
 
 .mobile_nav{
   position: absolute;

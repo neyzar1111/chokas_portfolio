@@ -1,4 +1,3 @@
-import React, {useState, useEffect, useRef} from "react";
 
 function AboutMe() {
 
@@ -12,12 +11,11 @@ function AboutMe() {
                     <p>
                         I am passionate about building scalable software, creating effective solutions, and learning every day to grow professionally in the IT field.
                     </p>
-                    <a href="mailto:choka95@hotmail.com" target="_blank" >
+                    <a href="mailto:choka95@hotmail.com" target="_blank"  rel="noopener noreferrer">
                         <button className="intro-button">
                             send me email
-                            <img className= "mailMe_icon" src="/assets/send_blue.png"/>
+                            <img className= "mailMe_icon" src="/assets/send_blue.png" alt="mail me icon"/>
                         </button>
-
                     </a>
 
                 </div>
@@ -27,46 +25,46 @@ function AboutMe() {
 
                 <div className="icon-skills_wrap code_skills">
                     <div className="icon-wrap">
-                        <img  className="icon-skills" src="/assets/javascript.svg"/>
+                        <img  className="icon-skills" src="/assets/javascript.svg" alt="javascript"/>
                     </div>
 
                     <div className="icon-wrap">
-                        <img className="icon-skills" src="/assets/laravel.png"/>
+                        <img className="icon-skills" src="/assets/laravel.png" alt="laravel"/>
                     </div>
 
                     <div className="icon-wrap">
-                        <img className="icon-skills" src="/assets/react.png"/>
+                        <img className="icon-skills" src="/assets/react.png" alt="react"/>
                     </div>
 
                     <div className="icon-wrap">
-                        <img  className="icon-skills" src="/assets/php.svg"/>
+                        <img  className="icon-skills" src="/assets/php.svg"  alt="php" />
 
                     </div>
                     <div className= "icon-wrap">
-                        <img className="icon-skills" src="/assets/typescript.svg"/>
+                        <img className="icon-skills" src="/assets/typescript.svg" alt="typescript"/>
                     </div>
 
                     <div className="icon-wrap">
-                        <img  className="icon-skills" src="/assets/html-5.svg"/>
+                        <img  className="icon-skills" src="/assets/html-5.svg" alt="html 5"/>
                     </div>
                     <div className="icon-wrap">
-                        <img  className="icon-skills" src="/assets/bootstrap.svg"/>
+                        <img  className="icon-skills" src="/assets/bootstrap.svg" alt="bootstrap"/>
                     </div>
                     <div className="icon-wrap">
-                        <img  className="icon-skills" src="/assets/sass.svg"/>
+                        <img  className="icon-skills" src="/assets/sass.svg" alt="sass"/>
                     </div>
 
                     <div className="icon-wrap">
-                        <img className="icon-skills" src="/assets/git.svg"/>
+                        <img className="icon-skills" src="/assets/git.svg" alt="git"/>
                     </div>
                     <div className="icon-wrap">
-                        <img className="icon-skills github-icon" src="/assets/github.svg"/>
+                        <img className="icon-skills github-icon" src="/assets/github.svg" alt="github"/>
                     </div>
                     <div className="icon-wrap">
-                        <img className="icon-skills" src="/assets/nodejs.svg"/>
+                        <img className="icon-skills" src="/assets/nodejs.svg" alt="node js"/>
                     </div>
                     <div className="icon-wrap">
-                        <img className="icon-skills" src="/assets/bash.svg"/>
+                        <img className="icon-skills" src="/assets/bash.svg" alt="bash"/>
                     </div>
 
                 </div>
